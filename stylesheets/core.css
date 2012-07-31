@@ -1,0 +1,98 @@
+@import url('core_files/reset.css');
+
+
+
+/********************************************
+        MAIN STYLES
+********************************************/
+
+
+/********************************************
+        LIST LAYOUT STYLES
+********************************************/
+
+
+.horizontal {
+  margin-left: 0px!important;
+  padding: 0px!important;
+}
+.horizontal li{
+  display: inline;
+  float: left;
+}
+.horizontal:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.vertical {
+  margin-left: 0px!important;
+  padding: 0px!important;
+}
+.vertical li{
+  display: inline-block;
+  float: none;
+  width: 100%;
+}
+.item_listing li {
+  height: 250px;
+  margin-right: 5px;
+  width: 150px;
+}
+.item_listing li div.img {
+  height: 140px;
+  text-align: center;
+  width: 140px;
+}
+.item_listing li div.items {
+  height: 100px;
+  overflow: hidden;
+}
+.products #primary > ul{
+  margin-left: 0;
+}
+.item_listing.vertical li{
+  height: 150px;
+  width: 100%;
+}
+.item_listing.vertical li .img{
+  display: inline;
+  float: left;
+  margin-right: 5px;
+}
+.item_listing.vertical li .items{
+  display: inline;
+  float: left;
+}
+
+
+
+/********************************************
+        FLOAT LAYOUT STYLES
+********************************************/
+
+.column{
+  display: inline;
+  float: left;
+}
+.right{
+  display: inline;
+  float: right;
+}
+.left{
+  display: inline;
+  float: left;
+}
+
+/********************************************
+        TOOLS
+********************************************/
+.hidden { display: none; }
+.first { margin-left:0; }
+.last { margin-right:0; }
+.top { margin-top:0; }
+.bottom { margin-bottom:0; }
+.pointer { cursor: pointer; }
+.clearfix { clear: both }

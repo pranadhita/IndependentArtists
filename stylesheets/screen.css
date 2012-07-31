@@ -1,0 +1,235 @@
+@import url('core.css');
+@import url('jquery.mCustomScrollbar.css');
+
+
+
+/********************************************
+        TEXT STYLES
+********************************************/
+
+body {font-family: Helvetica; font-size: 12px; color: #d0d0d0;}
+
+#nav a {font-size: 14px; color: #fff; text-decoration: none;}
+#nav a:hover {color: #e3bc23;}
+
+a {color: #e3bc23;}
+a:hover {color: #daae00;}
+
+body#p-home #nav ul li#nav-home a,
+body#p-comedians #nav ul li#nav-comedians a,
+body#p-info #nav ul li#nav-info a,
+body#p-shows #nav ul li#nav-available_shows a,
+body#p-now_touring #nav ul li#nav-now_touring a,
+body#p-contact #nav ul li#nav-contact a {color: #e3bc23;}
+
+h1 {font-size: 20px; color: #e3bc23;}
+h2 {font-size: 15px; color: #e3bc23;}
+h3 {font-size: 14px; color: #e3bc23; margin: 20px 0 4px 0;}
+h4 {font-size: 14px; color: #fff; margin: 0 0 10px 0;}
+
+p {font-family: Helvetica; font-size: 12px; color: #d0d0d0; padding: 0 0 12px 0; line-height: 14px;}
+
+em {font-size: 11px;}
+
+.list {display: inline-block; margin: 10px;}
+.list li {background: url(../images/core/dotpoints.jpg) 0 3px no-repeat; padding: 0 0 0 15px; margin: 0 0 10px 0;}
+
+#primary p {width: 285px;}
+
+/********************************************
+        CLASSES STYLES
+********************************************/
+
+.title-breaks {width: 375px; height: 5px; margin: 5px 0 20px 0; display: block;}
+.title-breaks-l {width: 750px; height: 5px; margin: 5px 0 20px 0; display: block;}
+
+/********************************************
+        CONTAINER STYLES
+********************************************/
+
+body {background: url(../images/core/wrapper-bg.jpg) top center no-repeat  #000;}
+#container {width: 750px; margin: auto;}
+#content {width: 750px; height: 630px; position: relative;}
+	body#p-home #content {background: url(../images/background/bg-homepage.jpg) 0 0 no-repeat;}
+	body#p-info #content {background: url(../images/background/bg-info.jpg) 0 0 no-repeat;}
+	body#p-comedians #content {background: url(../images/background/bg-contact.jpg) 0 0 no-repeat;}
+	body#p-shows #content {background: url(../images/background/bg-corporate.jpg) 0 0 no-repeat;}
+	body#p-now_touring #content {background: url(../images/background/bg-touring.jpg) 0 0 no-repeat;}
+	
+	body#p-shows.comedians #content {background: url(../images/background/bg-comedians.jpg) 0 0 no-repeat;}
+	body#p-shows.workshops #content {background: url(../images/background/bg-workshops.jpg) 0 0 no-repeat;}
+	body#p-contact #content {background: url(../images/background/bg-contact.jpg) 0 0 no-repeat;}
+	body#p-contact.thankyou #content {background: url(../images/background/bg-contact2.jpg) 0 0 no-repeat;}
+	body#p-contact.error #content {background: url(../images/background/bg-contact.jpg) 0 0 no-repeat;}
+	
+#primary {width: 375px; float: right; margin: 66px 0 0 0;}
+	body#p-contact #primary {width: 750px; margin: 66px 0 0 0px;}
+	body#p-comedians #primary {
+        width: 750px;
+        float: right;
+        margin: 66px 0 0 0;
+        }
+#footer {width: 750px; text-align: center;}
+	#footer p {color: #717070; font-size: 10px;}
+
+
+/********************************************
+        HEADER STYLES
+********************************************/
+
+#header {width: 750px; height: 100px; position: relative;}
+#logo {width: 193px; height: 40px; position: absolute; top: 10px; left: 10px;}
+
+/********************************************
+        NAV STYLES
+********************************************/
+
+#nav ul {position: absolute; right: 10px; top: 27px;}
+#nav ul li {float: left; padding: 0 0 0 28px;}
+
+
+/********************************************
+        Home Page STYLES
+********************************************/
+
+#homepage-decor {width: 208px; height: 393px; position: absolute; left: 100px; top: 170px;}
+
+
+/********************************************
+        Comedians Page STYLES
+********************************************/
+
+body#p-comedians #content a {text-decoration: none}
+body#p-comedians #content a:hover { color: #840900;}
+body#p-comedians #mcs_container { width: 780px; }
+body#p-comedians #mcs_container .container { width: 750px; }
+body#p-comedians #mcs_container .customScrollBox {height: auto; max-height: 300px}
+body#p-comedians #mcs_container ul.listing li { display: inline; width: 101px; height: 126px; padding: 0 16px 0 0; line-height: 80px; position: relative}
+body#p-comedians #mcs_container ul.listing li a.img img { border: solid 2px #332A09; }
+body#p-comedians #mcs_container ul.listing li a.img:hover img { border: solid 2px #AF901B; }
+body#p-comedians #mcs_container ul.listing a .title { color: #ffffff;position: absolute; top: 20px;left: 0;width: 105px;font-size: 15px; text-align: center}
+body#p-comedians #mcs_container ul.listing a:hover .title { color: #E3BC23;}
+body#p-comedians #content.detail #primary { position: relative; }
+body#p-comedians #content.detail #mcs_container { width: 350px; }
+body#p-comedians #content.detail #mcs_container .container { width: 320px; }
+body#p-comedians #content.detail #primary { width: 375px; }
+body#p-comedians #content.detail #primary h4 { margin: 20px 0 0 0; }
+body#p-comedians #content.detail #primary em { font-size:inherit; }
+body#p-comedians #content.detail .photo { margin-top: 34px;margin-left: 14px;position: relative;}
+body#p-comedians #content.detail .photo ul { margin-top: 420px;position: absolute;width: 400px;margin-left: -35px; text-align: center}
+body#p-comedians #content.detail .photo ul li { float: left;margin-left: 12px;}
+body#p-comedians #content.detail .photo ul li a,
+body#p-comedians #content.detail .back {display: block; line-height: 24px;font-size: 7.5pt;}
+body#p-comedians #content.detail .photo ul li a.cv { padding-left: 24px;width: 75px;  background: url(../images/core/icon_word.png) no-repeat 0px center; }
+body#p-comedians #content.detail .photo ul li a.startVids { padding-left: 20px;width: 120px;  background: url(../images/core/icon_utube.png) no-repeat 0 center; }
+body#p-comedians #content.detail .photo ul li a.twitter { padding-left: 25px;width: 85px;  background: url(../images/core/icon_twitter.png) no-repeat 0 center; }
+body#p-comedians #content.detail .content h3 { margin-top: 6px; color: #E3BC23}
+body#p-comedians #content.detail .shows .title { display: block;float: left;width: 100px;}
+body#p-comedians #content.detail .shows li {clear: both;padding: 8px 0;}
+body#p-comedians #content.detail .shows .desc { display: block;float: left;width: 212px;}
+body#p-comedians #content.detail .shows .desc li { padding-top: 0;}
+body#p-comedians #content.detail .links .hide { display: none;}
+body#p-comedians #content.detail .back {position: absolute;right: 40px;top: 17px;width:48px}
+body#p-comedians #content.detail .back .icon {display: block;margin: 8px 4px 0 0;width: 5px;height: 7px;float: left;background: url('../images/core/arrow-back.png') 0 0; }
+body#p-comedians #content.detail .back:hover .icon {background: url('../images/core/arrow-back.png') 0 7px; }
+
+/********************************************
+        Info Page STYLES
+********************************************/
+
+#info-decor {width: 339px; height: 112px; position: absolute; right: -100px; top: 460px; }
+#video {width: 335px; height: 135px; background: url(../images/video/bg-video.png) 0 0 no-repeat; position: absolute; bottom: 90px;}
+	#video ul {padding: 14px 0 0 82px;}
+	#video ul li {width: 82px; height: 53px; float: left; margin: 0 7px 0 0;}
+	
+	#play_video {background: url(../images/core/btn-play_video.png) 0 0 no-repeat; width: 67px; height: 30px; display: block; text-indent: -9999px; position: absolute; top: -40px; left: 60px;}
+
+/********************************************
+        SHOWS STYLES
+********************************************/
+
+#shows-decor {width: 123px; height: 47px; position: absolute; left: 140px; bottom: 70px;}
+
+#shows_nav {display: inline-block; margin: 0 0 10px 0;}
+#shows_nav li {float: left;}
+.shows_comedians {width: 97px; height: 50px; background: url(../images/core/btn-theatre.png) 0 0 no-repeat; display: block; margin: 0 5px 0 0;}
+.shows_workshops {width: 110px; height: 50px; background: url(../images/core/btn-workshops.png) 0 0 no-repeat; display: block; margin: 0 5px 0 0;}
+.shows_events {width: 110px; height: 50px; background: url(../images/core/btn-corporate.png) 0 0 no-repeat; display: block;}
+#shows_nav a:hover {background-position: 0 -50px;}
+
+body#p-shows #mcs_container {height: 250px;}
+body#p-shows .customScrollBox {height: 240px;}
+body#p-shows .dragger_container {height: 240px;}
+
+/**Comedian **/
+body#p-shows.comedians .shows_comedians {background-position: 0 -50px;}
+	#shows_comedian-decor {width: 124px; height: 64px; position: absolute; left: 60px; bottom: 90px;}
+/** Workshops **/
+body#p-shows.workshops .shows_workshops {background-position: 0 -50px;}
+	#shows_workshops-decor {width: 416px; height: 41px; position: absolute; left: -10px; bottom: 90px;}
+
+/** Events **/
+body#p-shows.events .shows_events {background-position: 0 -50px;}
+	#shows_events-decor {width: 123px; height: 47px; position: absolute; left: 140px; bottom: 75px;}
+
+/********************************************
+        TOURING STYLES
+********************************************/
+#now_touring-decor {width: 338px; height: 188px; position: absolute; left: 0px; bottom: 60px;}
+
+/********************************************
+        SHOWTIMES STYLES
+********************************************/
+
+.showtimes p {margin: 0px; padding: 0px;}
+.showtimes_list {display: inline-block;}
+.showtimes_list p {width: 240px!important;}
+.showtimes_list li {float: left; padding: 0 0 20px 0;}
+
+.date_stamp {width: 80px; font-size: 12px; color: #e3bc23;}
+.date_large {font-size: 25px;}
+
+.showtimes_desc {width: 240px;}
+
+.highlight {color: #e3bc23; }
+
+/********************************************
+        FORM STYLES
+********************************************/
+
+#How_Can_We_Help {width: 314px; height: 111px; background: url(../images/core/field-comment.png) 0 0 no-repeat;  padding: 10px 10px 40px 10px;}
+#How_Can_We_Help_textarea {width: 304px; height: 111px; border: none; overflow:auto; resize: none; background: none;}
+
+.form_label {width: 70px; display: block; float: left; margin: 20px 0 0 0;}
+.form_label li {width: 70px; height: 30px; margin: 2px 0 0 0;}
+
+.form_input {width: 279px; height: 135px; float: left; background: url(../images/core/field-details.jpg) 0 0 no-repeat; margin: 10px 0 0 0;}
+.form_input input {width: 240px; height: 19px; margin: 6px 0 6px 16px; background: none; border: none;}
+	#input_email input {margin: 10px 0 6px 16px;}
+
+#submit_button {width: 168px; height: 90px; float: left; background: url(../images/core/btn-send.png) 0 0 no-repeat; border: none; cursor: pointer; margin: 10px 0 0 0;}
+#submit_button:hover {background-position: 0 -90px;}
+
+
+/********************************************
+        THANKYOU PAGE STYLES
+********************************************/
+
+#contact_info {width: 250px; position: absolute; right: 0px; top: 160px;}
+	#contact_info tr {height: 20px;}
+.table_title {width: 90px; font-weight: bold;}
+
+
+/********************************************
+        GOOGLE MAP STYLES
+********************************************/
+
+.googlemap{
+  height:400px;
+  width:640px;
+}
+.googlemap span{
+  display: block;
+  margin-bottom: 3px;
+  text-align: center;
+}

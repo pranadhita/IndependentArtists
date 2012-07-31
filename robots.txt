@@ -1,0 +1,70 @@
+User-agent: *
+
+Disallow: /inc_
+Disallow: /inc-
+Disallow: /_inc_
+Disallow: /_inc-
+Disallow: /-inc_
+Disallow: /-inc-
+
+Disallow: /dev
+Disallow: /default.shtml
+Disallow: /Default.shtml
+Disallow: /index.shtml
+Disallow: /Index.shtml
+
+Disallow: /admin
+Disallow: /Admin
+Disallow: /concept
+Disallow: /database
+Disallow: /Database
+Disallow: /DataBase
+Disallow: /demo
+Disallow: /includes
+Disallow: /intranet
+Disallow: /javascript
+Disallow: /javascripts
+Disallow: /stats
+Disallow: /Stats
+Disallow: /swf
+Disallow: /temp
+Disallow: /plugins
+
+Allow: /testimonies.shtml
+Allow: /testimonials.shtml
+
+Disallow: /cart_thankyou.shtml
+Disallow: /contact_thankyou.shtml
+Disallow: /checkout_thankyou.shtml
+Disallow: /enquire_thankyou.shtml
+Disallow: /enquiry_thankyou.shtml
+Disallow: /order_thankyou.shtml
+Disallow: /purchase_thankyou.shtml
+Disallow: /thankyou.shtml
+Disallow: /thank_you.php
+Disallow: /error.php
+
+Disallow: /popup
+
+Disallow: /catalogue_detail.shtml
+Disallow: /catalogue_listing.shtml
+Disallow: /product_detail.shtml
+Disallow: /product_category.shtml?
+Disallow: /product_categories.shtml
+Disallow: /product_subcat.shtml
+Disallow: /product_listing.shtml
+Disallow: /products_detail.shtml
+Disallow: /products_category.shtml?
+Disallow: /products_categories.shtml
+Disallow: /products_subcat.shtml
+Disallow: /products_listing.shtml
+Disallow: /search_listing.shtml
+Disallow: /search_results.shtml
+
+Disallow: /cart
+Disallow: /Cart
+Disallow: /checkout.shtml
+
+Disallow: /410-gone.shtml
+
+Disallow: /PPC-
